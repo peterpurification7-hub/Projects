@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechForge - Admin Order Finalization</title>
+</head>
+<body>
+<h3>Enter the Order ID to calculate totals and finalize the build</h3>
+
+<form id="adminForm" action="adminedit.php" method="post">
+	<table>
+		<tr>
+			<td> Order ID: <td>
+			<td> <input type="text" name="orderid" required> </td>
+		</tr>
+	</table>
+    <p><em>Note: Clicking submit will automatically calculate the 20% markup based on the components linked to this order.</em></p>
+<input id="button" type="submit" value="Finalize Order" />
+</form>
+
+<br>
+<form action="adminreview.php" method="post">
+    <input type="submit" value="Back to Admin Review" />
+</form>
+
+</body>
+</html>

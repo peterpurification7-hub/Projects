@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TechForge - Custom PC Solutions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3em;
+        color: #e74c3c;
+      } /* Red accent for TechForge */
+      header p {
+        font-size: 1.2em;
+        font-style: italic;
+      }
+
+      nav {
+        background: #34495e;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: #e74c3c;
+      }
+
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .hero-text {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .tier-box {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+      /* Modified .tier to make images look perfect */
+      .tier {
+        background: #ecf0f1;
+        border: 1px solid #bdc3c7;
+        /* We changed padding to 0 on top so the image touches the edges */
+        padding: 0 0 15px 0;
+        width: 30%;
+        text-align: center;
+        border-radius: 8px;
+        overflow: hidden; /* This "clips" the image corners to match the box */
+        transition: transform 0.3s ease; /* Adds a smooth feel when we add hover effects */
+      }
+
+      /* This is the new part for your 3 images */
+      .tier img {
+        width: 100%;
+        height: 200px; /* Adjust this to make your PC photos taller or shorter */
+        object-fit: cover; /* Ensures the photo doesn't look "squashed" */
+        border-bottom: 4px solid #e74c3c; /* TechForge Red underline */
+      }
+
+      .tier h3 {
+        color: #2c3e50;
+        margin-top: 15px;
+        padding: 0 10px;
+      }
+
+      .tier p {
+        padding: 0 15px;
+        font-size: 0.95em;
+        color: #555;
+      }
+
+      .tier:hover {
+        transform: translateY(-10px); /* Lifts the card up */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-color: #e74c3c;
+      }
+
+      .login-btn {
+        display: inline-block;
+        background: #e74c3c;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .login-btn:hover {
+        background: #c0392b;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.8em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>TechForge</h1>
+      <p>Precision Crafted Performance Systems</p>
+    </header>
+
+    <nav>
+      <a href="index_files/about.htm">About & Services</a>
+      <a href="index_files/reviews.htm">Reviews</a>
+      <a href="index_files/components.php">Components</a>
+      <a href="tech_register.html">Login / Register</a>
+    </nav>
+
+    <div class="container">
+      <div class="hero-text">
+        <p>
+          <strong>TechForge</strong> is a premier custom PC building service. We
+          specialize in configuring high-performance systems tailored to your
+          specific needs. From budget-friendly workstations to ultra-tier gaming
+          rigs, we ensure every build is optimized for peak reliability and
+          speed.
+        </p>
+      </div>
+
+      <div class="tier-box">
+        <div class="tier">
+          <img src="index_files/old_pc.jpg" alt="Budget PC Build" />
+          <h3>Budget Tier</h3>
+          <p>Reliable performance for daily tasks and office productivity.</p>
+        </div>
+
+        <div class="tier">
+          <img src="index_files/pro_pc.jpg" alt="Professional PC Build" />
+          <h3>Pro Tier</h3>
+          <p>Balanced hardware for content creation and smooth gaming.</p>
+        </div>
+
+        <div class="tier">
+          <img src="index_files/ultra_pc.jpg" alt="Extreme PC Build" />
+          <h3>Ultra Tier</h3>
+          <p>The pinnacle of hardware. 4K gaming and heavy rendering.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <p>Ready to build your dream machine?</p>
+        <a href="tech_register.html" class="login-btn"
+          >Start Your Order / Log In</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      &copy; <?php echo date("Y"); ?> TechForge Custom PC Solutions. Peter's CS
+      Project.
+    </footer>
+  </body>
+</html>
